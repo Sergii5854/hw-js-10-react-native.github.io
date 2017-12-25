@@ -1,8 +1,7 @@
 {
-  "name": "slider-react-native",
+  "name": "todo",
   "version": "0.1.0",
-  "private": true,
-  "devDependencies": {
+ "devDependencies": {
     "jest-expo": "23.0.0",
     "react-test-renderer": "16.0.0"
   },
