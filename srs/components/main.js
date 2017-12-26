@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
   View,
   Text,
@@ -12,22 +12,23 @@ import Note from './note';
 
 export default class Main extends Component {
 
-  constructor(props){
+  constructor(props) {
     super(props);
     this.state = {
       noteArray: [],
       noteText: '',
     };
   }
+
   render() {
-    let notes = this.state.noteArray.map((val, key)=>{
+    let notes = this.state.noteArray.map((val, key) => {
       return <Note key={key} keyval={key} val={val}
                    deleteMethod={()=>this.deleteNote(key)}/>
     });
     return (
         <View style={styles.container}>
           <View style={styles.header}>
-            <Text style={styles.headerText}>- NOTER -</Text>
+            <Text style={styles.headerText}>- ToDo -</Text>
           </View>
           <ScrollView style={styles.scrollContainer}>
             {notes}
@@ -50,21 +51,21 @@ export default class Main extends Component {
     );
   }
 
-  addNote(){
-    if(this.state.noteText){
+  addNote() {
+    if (this.state.noteText) {
       var d = new Date();
       this.state.noteArray.push({
-        'date':d.getFullYear()+
-        "/"+(d.getMonth()+1) +
-        "/"+ d.getDate(),
+        'date': d.getFullYear() +
+        "/" + (d.getMonth() + 1) +
+        "/" + d.getDate(),
         'note': this.state.noteText
       });
-      this.setState({ noteArray: this.state.noteArray });
-      this.setState({noteText:''});
+      this.setState({noteArray: this.state.noteArray});
+      this.setState({noteText: ''});
     }
   }
 
-  deleteNote(key){
+  deleteNote(key) {
     this.state.noteArray.splice(key, 1);
     this.setState({noteArray: this.state.noteArray});
   }
@@ -78,7 +79,7 @@ const styles = StyleSheet.create({
   header: {
     backgroundColor: '#E91E63',
     alignItems: 'center',
-    justifyContent:'center',
+    justifyContent: 'center',
     borderBottomWidth: 10,
     borderBottomColor: '#ddd'
   },
@@ -103,7 +104,7 @@ const styles = StyleSheet.create({
     color: '#fff',
     padding: 20,
     backgroundColor: '#252525',
-    borderTopWidth:2,
+    borderTopWidth: 2,
     borderTopColor: '#ededed'
   },
   addButton: {

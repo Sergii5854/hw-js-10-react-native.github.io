@@ -1,4 +1,4 @@
-import React, { Component } from 'react';
+import React, {Component} from 'react';
 import {
   View,
   Text,
@@ -28,7 +28,7 @@ const styles = StyleSheet.create({
     position: 'relative',
     padding: 20,
     paddingRight: 100,
-    borderBottomWidth:2,
+    borderBottomWidth: 2,
     borderBottomColor: '#ededed'
   },
   noteText: {
