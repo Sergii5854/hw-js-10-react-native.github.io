@@ -22,7 +22,6 @@ export default class Note extends Component {
   }
 }
 
-
 const styles = StyleSheet.create({
   note: {
     position: 'relative',
