@@ -3,6 +3,8 @@
 # expo
 .expo/
 .idea/
+ios/
+
 # dependencies
 /node_modules
 
