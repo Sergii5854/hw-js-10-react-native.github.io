@@ -8,7 +8,9 @@ import {
   TouchableOpacity
 } from 'react-native';
 
+
 import Note from './note';
+
 
 export default class Main extends Component {
 

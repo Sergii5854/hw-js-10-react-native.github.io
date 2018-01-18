@@ -3,39 +3,12 @@
 
     <item
         is-multidex="false"
-        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fbcore\1.3.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fbcore-1.3.0_b7ccd774ea146cd3948afa5d134a6c3cbdf37478.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\nafalin\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="6975da39a7040257bd51d21a231b76c915872d38">
         <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_540590b2f45eb9232884cba3f7fdc51302bbd486.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\nafalin\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_f18991c7502b3ad2f8dafac261e9b832a50fb21e.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\exploded-aar\com.facebook.fbui.textlayoutbuilder\textlayoutbuilder\1.0.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\com.facebook.fbui.textlayoutbuilder-textlayoutbuilder-1.0.0_43e83da83e95bd3956eb855acb158a4c61d2a2ca.jar" />
     </item>
     <item
         is-multidex="false"
@@ -48,48 +21,111 @@
     </item>
     <item
         is-multidex="false"
-        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\exploded-aar\com.facebook.soloader\soloader\0.1.0\jars\classes.jar"
+        jar="C:\Users\nafalin\.android\build-cache\88a00cd843610f419cb36a3af4ef0aa447c7e5ef\output\jars\libs\infer-annotations-4.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\com.facebook.soloader-soloader-0.1.0_db71971f52fe6e2ad3ed8e55e73d07606aa1485c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.3\jars\libs\infer-annotations-4.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
+        revision="27.0.2"
         sha1="9809e90be788acdb479b2b44e2112f3295a03068">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_3849c4538724ea4bf9befc59e71636a242a0ddef.jar" />
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\infer-annotations-4.0_e398dc6dcf251cd1333a16b9d687ea935a8cf061.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline\1.3.0\jars\classes.jar"
+        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\node_modules\react-native-fs\android\build\intermediates\bundles\default\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
+        revision="27.0.2"
+        sha1="17941b2819894e7dd26200eb97293d4022e138ba">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\classes_92e64ab1763bcd337ece0d2ff53af67ee39606a3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\.android\build-cache\2891a0679335060635e0507ecc0f10c5b47fc7c8\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
         sha1="48c7f54c2515a2312d3a4481d10c43fbb807f3af">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-1.3.0_df36b78a7eb6da222ff1d4790d258d0eb0f53556.jar" />
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\classes_849be58c353e74407173b21de6681bdff20576a8.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\libs\internal_impl-23.0.1.jar"
+        jar="C:\Users\nafalin\.gradle\caches\modules-2\files-2.1\com.parse.bolts\bolts-tasks\1.4.0\d85884acf6810a3bbbecb587f239005cbc846dc4\bolts-tasks-1.4.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
+        revision="27.0.2"
+        sha1="d85884acf6810a3bbbecb587f239005cbc846dc4">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\bolts-tasks-1.4.0_5a7a0c91218883ebab9f0747709f4dfb2b480757.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\.android\build-cache\758f0c2714b4d85406f1c81f67eaaa97b6ff3d28\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="8f615bca00639150c9eb6175d4b5471193f70794">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\classes_2312250ba71283fa12af72906dd29d08297f73dd.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\.android\build-cache\c21417427cd8977c1ead62e30045819d2ceee6e2\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\classes_10ceb9f869adc008e635124ca016e9aa58229e2f.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\.android\build-cache\88a00cd843610f419cb36a3af4ef0aa447c7e5ef\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="24303e5ddb2c1210dd7e8db9dbab018f50313e48">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\classes_a40303b36ba551fdf70970dca3f0af9b86565a89.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\incremental-runtime-classes\debug\instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.2"
+        sha1="12920f9016b8b05acbc2af7cdc13cef6946fe7d3">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run_8a7b13be5ec4b1a8bdf80d03559383ffc4b1f7aa\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\.android\build-cache\bc00ef81159df783ba818360d6e57d216b6de213\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="37345de2ed2772f385eaeec37a9c2ff0fea99ad7">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\classes_30c157eecb491ea2d3a32478c2e5354c8b3610f9.jar" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\incremental-classes\debug\instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="27.0.2"
+        sha1="b5a050648f7988a96bb1b3bc216298ca80f0b47f">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\transforms\dex\debug\folders\1000\10000\instant-run-bootstrap_9eb943a2c3011d8203b9c6abba38794c96f9fd5a\classes.dex" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\.android\build-cache\8c7b818ee56b11c043f99933bdfb5b71549616c9\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\classes_000451c45d558afe64c943edddf7c8c7784b061b.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\.android\build-cache\4516eca4cb2462cb76379ed51e4ce357e2db28ba\output\jars\libs\internal_impl-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
         sha1="aa92916125166649d8ad4ba3940c3dd7515596d3">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1_7ded062f89d6ee04bfd53d93768e2fdb841bbe23.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="C:\Users\nafalin\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_52a264950ccedcd95f1d9facf62f27257e0650d3.jar" />
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\internal_impl-23.0.1_77d30393b7a6378b71b73714e0156e2665e67781.jar" />
     </item>
     <item
         is-multidex="false"
@@ -102,30 +138,57 @@
     </item>
     <item
         is-multidex="false"
-        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\exploded-aar\todo\react-native-fs\unspecified\jars\classes.jar"
+        jar="C:\Users\nafalin\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="17941b2819894e7dd26200eb97293d4022e138ba">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\todo-react-native-fs-unspecified_44402e93df7ba1b91a245d5338928cd851189181.jar" />
+        revision="27.0.2"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_f18991c7502b3ad2f8dafac261e9b832a50fb21e.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\exploded-aar\com.facebook.fresco\drawee\1.3.0\jars\classes.jar"
+        jar="C:\Users\nafalin\.android\build-cache\653dff042357320cb3131574c4d2c01ea5066bb8\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-drawee-1.3.0_1acd4047e150e8a525d06431f15cc8aca1a86274.jar" />
+        revision="27.0.2"
+        sha1="f90b593491e4044903f0bbf68dc3fa2790b151b9">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\classes_0d88cf371557daae35fa12d90c41afa9b1c5ce5b.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\exploded-aar\com.facebook.fresco\fresco\1.3.0\jars\classes.jar"
+        jar="C:\Users\nafalin\.gradle\caches\modules-2\files-2.1\com.squareup.okio\okio\1.13.0\a9283170b7305c8d92d25aff02a6ab7e45d06cbe\okio-1.13.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-fresco-1.3.0_7995227ad0f47b653119f238326bbe2cf3a4a486.jar" />
+        revision="27.0.2"
+        sha1="a9283170b7305c8d92d25aff02a6ab7e45d06cbe">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\okio-1.13.0_79ade3ed3466435a776b2cb2342b194aa6bf1dce.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\node_modules\react-native-image-picker\android\build\intermediates\bundles\default\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="9f95540d3b14aed0250ba28dd07beece0df87598">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\classes_fcd2734698575bd6d583a3a57338f1b9fe04db63.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\.gradle\caches\modules-2\files-2.1\javax.inject\javax.inject\1\6975da39a7040257bd51d21a231b76c915872d38\javax.inject-1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="6975da39a7040257bd51d21a231b76c915872d38">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\javax.inject-1_540590b2f45eb9232884cba3f7fdc51302bbd486.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\.android\build-cache\4516eca4cb2462cb76379ed51e4ce357e2db28ba\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\classes_93e3a674daea20944ab4b55b3fb28898a3fe3e2b.jar" />
     </item>
     <item
         is-multidex="false"
@@ -138,21 +201,30 @@
     </item>
     <item
         is-multidex="false"
-        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-okhttp3\1.3.0\jars\classes.jar"
+        jar="C:\Users\nafalin\.android\build-cache\37764a08f21d219404cb32d6d172a4c8b5eb085a\output\jars\classes.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="c03c08c9934b23c8c09c803345ec51a74119127b">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-okhttp3-1.3.0_247f4b1fedc0d035f847217cd19e11b2d4210989.jar" />
+        revision="27.0.2"
+        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\classes_a1984d317869b709e29baf65ce49428d43e76436.jar" />
     </item>
     <item
         is-multidex="false"
-        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\exploded-aar\com.android.support\support-v4\23.0.1\jars\classes.jar"
+        jar="C:\Users\nafalin\.gradle\caches\modules-2\files-2.1\com.facebook.fbui.textlayoutbuilder\staticlayout-proxy\1.0\f162442a19fff13995fbd51ba414d9ee05579080\staticlayout-proxy-1.0.jar"
         jumboMode="false"
         optimize="true"
-        revision="23.0.1"
-        sha1="c31e21b53ff2f74664e498248d01453a32e32d48">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\com.android.support-support-v4-23.0.1_1306b8e9b6229899d8722223f9c5bd96fdb24400.jar" />
+        revision="27.0.2"
+        sha1="f162442a19fff13995fbd51ba414d9ee05579080">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\staticlayout-proxy-1.0_048a7efdac66345f4e9f7c4504cfa834082aa181.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1_561f3a5da36c314b3c06be16e3dd5c9c05ac65b6.jar" />
     </item>
     <item
         is-multidex="false"
@@ -165,48 +237,66 @@
     </item>
     <item
         is-multidex="false"
-        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\exploded-aar\com.facebook.fresco\imagepipeline-base\1.3.0\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="72128af126ddd7d6252da9357fe560d3abcdfb0c">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\com.facebook.fresco-imagepipeline-base-1.3.0_e538f9b752440bf5961fec27ee5c467f576a7e4c.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\exploded-aar\com.android.support\appcompat-v7\23.0.1\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="d86429b0f0b3f3cafbeb78dda1b9d89119ccb05d">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\com.android.support-appcompat-v7-23.0.1_961a06120b5060e5926bd8331f83ed6d7a20cddc.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\exploded-aar\com.facebook.react\react-native\0.50.3\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="24303e5ddb2c1210dd7e8db9dbab018f50313e48">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\com.facebook.react-react-native-0.50.3_176e02c5686941530e262cb54a3be04c2d8635c8.jar" />
-    </item>
-    <item
-        is-multidex="false"
-        jar="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\exploded-aar\todo\react-native-image-picker\unspecified\jars\classes.jar"
-        jumboMode="false"
-        optimize="true"
-        revision="23.0.1"
-        sha1="9f95540d3b14aed0250ba28dd07beece0df87598">
-        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\todo-react-native-image-picker-unspecified_3d7d1ef0a16ff82272182b4493ebf3551675a3d7.jar" />
-    </item>
-    <item
-        is-multidex="false"
         jar="C:\Users\nafalin\AppData\Local\Android\Sdk\extras\android\m2repository\com\android\support\support-annotations\23.0.1\support-annotations-23.0.1.jar"
         jumboMode="false"
         optimize="true"
         revision="23.0.1"
         sha1="1fce89a6428c51467090d7f424e4c9c3dbd55f7e">
         <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\support-annotations-23.0.1_561f3a5da36c314b3c06be16e3dd5c9c05ac65b6.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp-urlconnection\3.6.0\3f9b16b774f2c36cfd86dd2053d0b3059531dacc\okhttp-urlconnection-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="3f9b16b774f2c36cfd86dd2053d0b3059531dacc">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\okhttp-urlconnection-3.6.0_f18991c7502b3ad2f8dafac261e9b832a50fb21e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_52a264950ccedcd95f1d9facf62f27257e0650d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\.gradle\caches\modules-2\files-2.1\com.google.code.findbugs\jsr305\3.0.0\5871fb60dc68d67da54a663c3fd636a10a532948\jsr305-3.0.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="5871fb60dc68d67da54a663c3fd636a10a532948">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\jsr305-3.0.0_6f99b296b9365448d7b1439fe99e2ba6a2f88ce7.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\.android\build-cache\8f605aa1770a19d4797c0c95b3075029401ce652\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="fe85b87215e405f5917d40ae4960488ac9224b74">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\classes_b38e4e6da1d996b7f2726b727bfc61adc98a6355.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\.gradle\caches\modules-2\files-2.1\com.squareup.okhttp3\okhttp\3.6.0\69edde9fc4b01c9fd51d25b83428837478c27254\okhttp-3.6.0.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="23.0.1"
+        sha1="69edde9fc4b01c9fd51d25b83428837478c27254">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\okhttp-3.6.0_52a264950ccedcd95f1d9facf62f27257e0650d3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="C:\Users\nafalin\.android\build-cache\275b446b3c6a2f70f29d494a39ae3016d74c57b7\output\jars\classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="27.0.2"
+        sha1="c65a2e39d54023bac3aef64a2f0cff89289c7ff6">
+        <dex dex="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\pre-dexed\debug\classes_ed8ae3b935b673cdae5c4bf96a67e2c62f327aea.jar" />
     </item>
 
 </items>

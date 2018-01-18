@@ -15,7 +15,7 @@
     "link": "react-native link"
   },
   "jest": {
-    "preset": "react-native"
+    "preset": "jest-expo"
   },
   "dependencies": {
     "react": "16.0.0",

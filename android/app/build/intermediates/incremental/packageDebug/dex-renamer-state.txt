@@ -1,0 +1,7 @@
+#Wed Jan 17 20:42:37 EET 2018
+base.0=E\:\\JS7\\hw-js-10-react-native.github.io\\hw-js-10-react-native.github.io\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_8a7b13be5ec4b1a8bdf80d03559383ffc4b1f7aa
+renamed.1=classes2.dex
+renamed.0=classes.dex
+file.1=E\:\\JS7\\hw-js-10-react-native.github.io\\hw-js-10-react-native.github.io\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_9eb943a2c3011d8203b9c6abba38794c96f9fd5a\\classes.dex
+base.1=E\:\\JS7\\hw-js-10-react-native.github.io\\hw-js-10-react-native.github.io\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run-bootstrap_9eb943a2c3011d8203b9c6abba38794c96f9fd5a
+file.0=E\:\\JS7\\hw-js-10-react-native.github.io\\hw-js-10-react-native.github.io\\android\\app\\build\\intermediates\\transforms\\dex\\debug\\folders\\1000\\10000\\instant-run_8a7b13be5ec4b1a8bdf80d03559383ffc4b1f7aa\\classes.dex
