@@ -1,16 +1,19 @@
 import React, {Component} from 'react';
 import {
   View,
-  Text,
-  StyleSheet,
   TextInput,
   ScrollView,
-  TouchableOpacity
-} from 'react-native';
+  Text,
+  TouchableOpacity,
+  StyleSheet,
+  Image,
+  DatePickerAndroid
+} from 'react-native'
 
 
 import Note from './note';
-
+import ImagePicker from 'react-native-image-picker'
+import RNFS from 'react-native-fs'
 
 export default class Main extends Component {
 
@@ -19,38 +22,12 @@ export default class Main extends Component {
     this.state = {
       noteArray: [],
       noteText: '',
-    };
-  }
+      avatarSource: {},
+      date: null,
+      url: ''
+    }
 
-  render() {
-    let notes = this.state.noteArray.map((val, key) => {
-      return <Note key={key} keyval={key} val={val}
-                   deleteMethod={()=>this.deleteNote(key)}/>
-    });
-    return (
-        <View style={styles.container}>
-          <View style={styles.header}>
-            <Text style={styles.headerText}>- ToDo -</Text>
-          </View>
-          <ScrollView style={styles.scrollContainer}>
-            {notes}
-          </ScrollView>
-
-          <View style={styles.footer}>
-            <TextInput
-                style={styles.textInput}
-                placeholder='>note'
-                onChangeText={(noteText)=> this.setState({noteText})}
-                value={this.state.noteText}
-                placeholderTextColor='white'
-                underlineColorAndroid='transparent'>
-            </TextInput>
-          </View>
-          <TouchableOpacity onPress={ this.addNote.bind(this) } style={styles.addButton}>
-            <Text style={styles.addButtonText}>+</Text>
-          </TouchableOpacity>
-        </View>
-    );
+    this.addNote = this.addNote.bind(this);
   }
 
   addNote() {
@@ -71,6 +48,39 @@ export default class Main extends Component {
     this.state.noteArray.splice(key, 1);
     this.setState({noteArray: this.state.noteArray});
   }
+
+  render() {
+    let notes = this.state.noteArray.map((val, key) => {
+      return <Note key={key} keyval={key} val={val}
+                   deleteMethod={()=>this.deleteNote(key)}/>
+    });
+
+    return (
+        <View style={styles.container}>
+          <View style={styles.header}>
+            <Text style={styles.headerText}> ToDo List </Text>
+          </View>
+          <ScrollView style={styles.scrollContainer}>
+            {notes}
+          </ScrollView>
+
+          <View style={styles.footer}>
+            <TextInput
+                style={styles.textInput}
+                placeholder='add  note'
+                onChangeText={(noteText)=> this.setState({noteText})}
+                value={this.state.noteText}
+                placeholderTextColor='white'
+                underlineColorAndroid='transparent'>
+            </TextInput>
+          </View>
+          <TouchableOpacity  onPress={ this.addNote }  style={styles.addButton}>
+            <Text style={styles.addButtonText}>+</Text>
+          </TouchableOpacity>
+        </View>
+    );
+  }
+
 }
 
 
