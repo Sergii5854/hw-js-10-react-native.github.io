@@ -1,8 +1,8 @@
 <component name="libraryTable">
   <library name="org.webkit:android-jsc-r174650">
     <CLASSES>
-      <root url="file://$PROJECT_DIR$/../node_modules/react-native-fs/android/build/intermediates/exploded-aar/org.webkit/android-jsc/r174650/res" />
-      <root url="jar://$PROJECT_DIR$/../node_modules/react-native-fs/android/build/intermediates/exploded-aar/org.webkit/android-jsc/r174650/jars/classes.jar!/" />
+      <root url="jar://$USER_HOME$/.android/build-cache/7bc3d273b4397fe682873ab28bfa9d239fe34e3f/output/jars/classes.jar!/" />
+      <root url="file://$USER_HOME$/.android/build-cache/7bc3d273b4397fe682873ab28bfa9d239fe34e3f/output/res" />
     </CLASSES>
     <JAVADOC />
     <SOURCES />
