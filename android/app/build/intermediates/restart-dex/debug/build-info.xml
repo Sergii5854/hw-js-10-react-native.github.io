@@ -6,7 +6,7 @@
     density="560dpi"
     format="10"
     plugin-version="2.3.2"
-    timestamp="1516465840990"
+    timestamp="1516552246771"
     token="-7463773862963275975"
     verifier="COLD_SWAP_REQUESTED" >
 
@@ -25,7 +25,7 @@
 
     <build
         build-mode="FULL"
-        timestamp="1516464824970"
+        timestamp="1516544661360"
         verifier="FULL_BUILD_REQUESTED" >
         <artifact
             location="E:\JS7\hw-js-10-react-native.github.io\hw-js-10-react-native.github.io\android\app\build\intermediates\split-apk\debug\slices\slice_2.apk"
@@ -66,7 +66,7 @@
     </build>
     <build
         build-mode="COLD"
-        timestamp="1516465840990"
+        timestamp="1516552246771"
         verifier="COLD_SWAP_REQUESTED" />
 
 </instant-run>

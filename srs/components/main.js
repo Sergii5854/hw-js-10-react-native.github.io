@@ -25,34 +25,177 @@ export default class Main extends Component {
       avatarSource: {},
       date: null,
       url: ''
-    }
+    };
 
     this.addNote = this.addNote.bind(this);
+    this.removeNote = this.removeNote.bind(this);
+    this.changeText = this.changeText.bind(this);
+    this.selectImage = this.selectImage.bind(this);
+    this.storageData = this.storageData.bind(this);
+    this.addDate = this.addDate.bind(this);
+    this.updateText = this.updateText.bind(this);
+  }
+
+  componentWillMount() {
+    const filePath = RNFS.DocumentDirectoryPath + '/toDoList.json';
+    if (RNFS.exists(filePath)) {
+      RNFS.readFile(filePath)
+          .then((data) => {
+            this.setState({
+              noteArray: data ? JSON.parse(data) : []
+            })
+          })
+    } else {
+      this.storageData([])
+    }
+  }
+
+  storageData(data) {
+    const filePath = RNFS.DocumentDirectoryPath + '/toDoList.json';
+    RNFS.writeFile(filePath, JSON.stringify(data));
+    this.setState({
+      noteArray: data
+    })
+  }
+
+  async addDate(note) {
+    try {
+      const {action, year, month, day} = await DatePickerAndroid.open({
+        date: new Date()
+      });
+      let newDate;
+      if (typeof year === 'undefined') {
+        newDate = new Date()
+
+      } else {
+        newDate = year + '/' + month + '/' + day
+      }
+      let notes = this.state.noteArray;
+      notes.forEach((item) => {
+        if (item.id === note.id) {
+          item.date = newDate
+        }
+      });
+
+      this.setState({noteArray: notes});
+
+      this.storageData(notes)
+    } catch ({code, message}) {
+      console.log('Cannot open date picker', message)
+    }
   }
 
   addNote() {
     if (this.state.noteText) {
-      var d = new Date();
-      this.state.noteArray.push({
-        'date': d.getFullYear() +
-        "/" + (d.getMonth() + 1) +
-        "/" + d.getDate(),
-        'note': this.state.noteText
+      const d = new Date();
+      let notes = this.state.noteArray;
+
+      notes.push({
+        'id': Math.random() * 100,
+        'date': this.state.date || d.getFullYear() + '/' + (d.getMonth() + 1) + '/' + d.getDate(),
+        'note': this.state.noteText,
+        'url': ''
       });
-      this.setState({noteArray: this.state.noteArray});
-      this.setState({noteText: ''});
+      this.storageData(notes);
+
+      this.setState({
+        noteArray: notes,
+        noteText: '',
+        avatarSource: {},
+        date: null
+      })
     }
   }
 
-  deleteNote(key) {
-    this.state.noteArray.splice(key, 1);
-    this.setState({noteArray: this.state.noteArray});
+  selectImage(note) {
+    let options = {
+      title: 'Select Image',
+      storageOptions: {
+        skipBackup: true,
+        path: 'images'
+      }
+    };
+
+
+    ImagePicker.showImagePicker(options, (response) => {
+      console.log('Response = ', response)
+
+      if (response.didCancel) {
+        console.log('User cancelled image picker')
+      }
+      else if (response.error) {
+        console.log('ImagePicker Error: ', response.error)
+      }
+      else if (response.customButton) {
+        console.log('User tapped custom button: ', response.customButton)
+      }
+      else {
+        let filePath = RNFS.DocumentDirectoryPath + response.fileName
+        console.log('response', response)
+        RNFS.writeFile(filePath, response.data, 'base64')
+            .then(() => {
+              console.log('saved file', filePath)
+            })
+            .catch(err => {
+              console.log('error save file', err)
+            })
+
+        let notes = this.state.noteArray
+        notes.forEach((item) => {
+          if (note.id === item.id) {
+            item.url = response.uri
+          }
+        })
+
+        this.setState({
+          noteArray: notes
+          // avatarSource: { uri: 'file://' + filePath }
+        }, () => { console.log('avatar', this.state.avatarSource) })
+        //this.state.url = this.state.avatarSource.uri
+        this.storageData(this.state.noteArray)
+      }
+    })
+  }
+
+
+  removeNote(key) {
+    let notes = this.state.noteArray;
+    notes.splice(key, 1);
+    this.setState({
+      noteArray: notes
+    });
+    this.storageData(notes)
+  }
+
+  changeText(noteText) {
+
+    this.setState({
+      noteText: noteText
+    });
+
+  }
+
+  updateText(newText, index) {
+    this.state.noteArray[index].note = newText;
+    this.setState({
+      noteArray: this.state.noteArray.concat([])
+    }, () => {
+      this.storageData(this.state.noteArray)
+    })
   }
 
   render() {
-    let notes = this.state.noteArray.map((val, key) => {
-      return <Note key={key} keyval={key} val={val}
-                   deleteMethod={()=>this.deleteNote(key)}/>
+    let notes = this.state.noteArray.map((note, index) => {
+      return <Note
+          storageFunc={this.storageData}
+          key={index}
+          keyVal={index}
+          val={note}
+          remove={() => this.removeNote(index)}
+          onChangeText={(newText) => this.updateText(newText, index)}
+          selectImage={this.selectImage}
+          addDate={this.addDate}
+      />
     });
 
     return (
@@ -74,7 +217,7 @@ export default class Main extends Component {
                 underlineColorAndroid='transparent'>
             </TextInput>
           </View>
-          <TouchableOpacity  onPress={ this.addNote }  style={styles.addButton}>
+          <TouchableOpacity onPress={ this.addNote } style={styles.addButton}>
             <Text style={styles.addButtonText}>+</Text>
           </TouchableOpacity>
         </View>

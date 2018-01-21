@@ -2,21 +2,59 @@ import React, {Component} from 'react';
 import {
   View,
   Text,
-  StyleSheet,
   TouchableOpacity,
-} from 'react-native';
+  StyleSheet,
+  Image,
+  TextInput
+} from 'react-native'
 
 
 export default class Note extends Component {
   render() {
     return (
-        <View key={this.props.keyval} style={styles.note}>
-          <Text style={styles.noteText}>{this.props.val.date}</Text>
-          <Text style={styles.noteText}>{this.props.val.note}</Text>
+        <View key={this.props.keyVal} style={styles.note}>
 
-          <TouchableOpacity onPress={this.props.deleteMethod} style={styles.noteDelete}>
-            <Text style={styles.noteDeleteText}>X</Text>
+          <View style={styles.titleDate}>
+            {this.props.val.url
+                ? <Image
+                    style={styles.image}
+                    source={{uri: this.props.val.url}} />
+                : null}
+            <View>
+              {this.props.val.date === null
+                  ? <Text style={styles.addDateText}>Date...</Text>
+                  : <Text style={styles.addDateText}>{this.props.val.date}</Text>}
+            </View>
+          </View>
+
+          <TextInput style={styles.noteText}
+                     onChangeText={this.props.onChangeText}>
+            <Text>{this.props.val.note}</Text>
+          </TextInput>
+          
+          <View style={styles.btnContainer}>
+
+            <TouchableOpacity
+                onPress={() => {this.props.selectImage(this.props.val)}}
+                underlayColor='#dddddd'
+                underlineColorAndroid='transparent'>
+              <Text style={styles.btnText}>Upload Image</Text>
+            </TouchableOpacity>
+
+            <TouchableOpacity
+                onPress={()=>{this.props.addDate(this.props.val)}}
+                underlayColor='#dddddd'
+                underlineColorAndroid='transparent'>
+              <Text style={styles.btnText}>Change Date</Text>
+            </TouchableOpacity>
+
+          </View>
+          
+          <TouchableOpacity onPress={this.props.remove} style={styles.noteRemove}>
+            <Text style={styles.noteRemoveText}>X</Text>
           </TouchableOpacity>
+
+
         </View>
     );
   }
@@ -25,27 +63,53 @@ export default class Note extends Component {
 const styles = StyleSheet.create({
   note: {
     position: 'relative',
-    padding: 20,
+    padding: 10,
     paddingRight: 100,
-    borderBottomWidth: 2,
+    borderBottomWidth: 10,
     borderBottomColor: '#ededed'
   },
   noteText: {
+    marginLeft: 5,
     paddingLeft: 20,
-    borderLeftWidth: 10,
+    borderLeftWidth: 5,
     borderLeftColor: '#E91E63'
   },
-  noteDelete: {
+  noteRemove: {
     position: 'absolute',
     justifyContent: 'center',
     alignItems: 'center',
     backgroundColor: '#2980b9',
+    borderRadius: 50,
     padding: 10,
-    top: 10,
+    top: 50,
     bottom: 10,
-    right: 10
+    right: 10,
+    width: 40,
+    height: 40,
+    elevation: 8
   },
-  noteDeleteText: {
-    color: 'white'
-  }
+  noteRemoveText: {
+    color: 'white',
+  },
+  titleDate: {
+    flex: 1,
+    alignItems: 'center',
+    paddingBottom: 15,
+    left: 20,
+    top: 5
+  },
+  btnContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    alignItems: 'flex-start',
+    paddingLeft: 5,
+    paddingRight: 5,
+    left: 10,
+    right: 10,
+    top: 5
+  },
+
+
+
 });
