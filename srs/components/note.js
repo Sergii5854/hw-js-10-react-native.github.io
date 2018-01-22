@@ -18,7 +18,7 @@ export default class Note extends Component {
             {this.props.val.url
                 ? <Image
                     style={styles.image}
-                    source={{uri: this.props.val.url}} />
+                    source={{uri: this.props.val.url}}/>
                 : null}
             <View>
               {this.props.val.date === null
@@ -31,7 +31,7 @@ export default class Note extends Component {
                      onChangeText={this.props.onChangeText}>
             <Text>{this.props.val.note}</Text>
           </TextInput>
-          
+
           <View style={styles.btnContainer}>
 
             <TouchableOpacity
@@ -49,7 +49,7 @@ export default class Note extends Component {
             </TouchableOpacity>
 
           </View>
-          
+
           <TouchableOpacity onPress={this.props.remove} style={styles.noteRemove}>
             <Text style={styles.noteRemoveText}>X</Text>
           </TouchableOpacity>
@@ -64,9 +64,11 @@ const styles = StyleSheet.create({
   note: {
     position: 'relative',
     padding: 10,
+    paddingBottom: 20,
     paddingRight: 100,
-    borderBottomWidth: 10,
-    borderBottomColor: '#ededed'
+    borderBottomWidth: 2,
+    borderBottomColor: '#E91E63'
+
   },
   noteText: {
     marginLeft: 5,
@@ -109,7 +111,11 @@ const styles = StyleSheet.create({
     right: 10,
     top: 5
   },
-
+  image: {
+    width: 120,
+    height: 100,
+    backgroundColor: 'white'
+  },
 
 
 });

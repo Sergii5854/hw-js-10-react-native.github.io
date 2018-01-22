@@ -22,7 +22,7 @@ export default class Main extends Component {
     this.state = {
       noteArray: [],
       noteText: '',
-      avatarSource: {},
+      imageURL: {},
       date: null,
       url: ''
     };
@@ -101,7 +101,7 @@ export default class Main extends Component {
       this.setState({
         noteArray: notes,
         noteText: '',
-        avatarSource: {},
+        imageURL: {},
         date: null
       })
     }
@@ -116,9 +116,8 @@ export default class Main extends Component {
       }
     };
 
-
     ImagePicker.showImagePicker(options, (response) => {
-      console.log('Response = ', response)
+      console.log('Response = ', response);
 
       if (response.didCancel) {
         console.log('User cancelled image picker')
@@ -130,28 +129,29 @@ export default class Main extends Component {
         console.log('User tapped custom button: ', response.customButton)
       }
       else {
-        let filePath = RNFS.DocumentDirectoryPath + response.fileName
-        console.log('response', response)
+        let filePath = RNFS.DocumentDirectoryPath + response.fileName;
+        console.log('response', response);
         RNFS.writeFile(filePath, response.data, 'base64')
             .then(() => {
               console.log('saved file', filePath)
             })
             .catch(err => {
               console.log('error save file', err)
-            })
+            });
 
-        let notes = this.state.noteArray
+        let notes = this.state.noteArray;
         notes.forEach((item) => {
           if (note.id === item.id) {
             item.url = response.uri
           }
-        })
+        });
 
         this.setState({
           noteArray: notes
-          // avatarSource: { uri: 'file://' + filePath }
-        }, () => { console.log('avatar', this.state.avatarSource) })
-        //this.state.url = this.state.avatarSource.uri
+        }, () => {
+          console.log('image', this.state.imageURL)
+        });
+
         this.storageData(this.state.noteArray)
       }
     })
@@ -168,7 +168,6 @@ export default class Main extends Component {
   }
 
   changeText(noteText) {
-
     this.setState({
       noteText: noteText
     });
@@ -203,6 +202,7 @@ export default class Main extends Component {
           <View style={styles.header}>
             <Text style={styles.headerText}> ToDo List </Text>
           </View>
+
           <ScrollView style={styles.scrollContainer}>
             {notes}
           </ScrollView>
@@ -210,7 +210,7 @@ export default class Main extends Component {
           <View style={styles.footer}>
             <TextInput
                 style={styles.textInput}
-                placeholder='add  note'
+                placeholder='Add Note Text'
                 onChangeText={(noteText)=> this.setState({noteText})}
                 value={this.state.noteText}
                 placeholderTextColor='white'
@@ -223,7 +223,6 @@ export default class Main extends Component {
         </View>
     );
   }
-
 }
 
 
