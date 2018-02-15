@@ -14,12 +14,14 @@ import {
 import Note from './note';
 import ImagePicker from 'react-native-image-picker'
 import RNFS from 'react-native-fs'
+import axios from 'axios'
 
 export default class Main extends Component {
 
   constructor(props) {
     super(props);
     this.state = {
+      id: 0,
       noteArray: [],
       noteText: '',
       imageURL: {},
@@ -37,25 +39,41 @@ export default class Main extends Component {
   }
 
   componentWillMount() {
-    const filePath = RNFS.DocumentDirectoryPath + '/toDoList.json';
-    if (RNFS.exists(filePath)) {
-      RNFS.readFile(filePath)
-          .then((data) => {
-            this.setState({
-              noteArray: data ? JSON.parse(data) : []
-            })
-          })
-    } else {
-      this.storageData([])
-    }
+    axios.get('http://192.168.0.26:3000/api/v1/todo')
+        .then(response => this.setState({noteArray: response.data.todo}));
+    // const filePath = RNFS.DocumentDirectoryPath + '/toDoList.json';
+    // if (RNFS.exists(filePath)) {
+    //   RNFS.readFile(filePath)
+    //       .then((data) => {
+    //         this.setState({
+    //           noteArray: data ? JSON.parse(data) : []
+    //         })
+    //       })
+    // } else {
+    //   this.storageData([])
+    // }
   }
 
-  storageData(data) {
-    const filePath = RNFS.DocumentDirectoryPath + '/toDoList.json';
-    RNFS.writeFile(filePath, JSON.stringify(data));
+  storageData(id,data) {
+    // const filePath = RNFS.DocumentDirectoryPath + '/toDoList.json';
+    // RNFS.writeFile(filePath, JSON.stringify(data));
+    const newData = this.state.todo.map(item => {
+      if (item._id !== id) {
+        return item
+      }
+      return {
+        ...item,
+        data
+      }
+    });
     this.setState({
-      noteArray: data
-    })
+      noteArray: newData
+    });
+    axios.put(`http://192.168.0.26:3000/api/v1/todo${id}`, {
+      todo: {
+        data,
+      }
+    }).then(response => console.log('edited'))
   }
 
   async addDate(note) {
